@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+ <div class="card-wrapper">
+
+  <div class="card">
+
+    <h1 class="center">Create Account</h1>
+    <form name="signup_form">
+
+      <label for="name">Token</label>
+      <input type="text" name="token" class="field"> 
+
+      <p class="error error--hidden"></p>
+
+      <input type="submit" value="Register" class="btn">
+    </form>
+
+  </div>
+  <div class="card">
+
+    <h1 class="center">Login</h1>
+    <form name="login_form">
+
+      <label for="name">Token</label>
+      <input type="text" name="token" class="field" required> 
+
+      <p class="error error--hidden"></p>
+
+      <input type="submit" value="Auth" class="btn">
+    </form>
+
+  </div>
+</div>
+
+{% endblock %}
